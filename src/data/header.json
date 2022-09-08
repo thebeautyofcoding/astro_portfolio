@@ -1,0 +1,12 @@
+{
+    "header": {
+        "h1": "Welcome",
+        "p": "I am Heiner and I am interested in everything Fullstack",
+        "banner": "src/images/header.jpg",
+        "images": [
+            "src/images/typescript.png",
+            "src/images/python.png",
+            "src/images/php.png"
+        ]
+    }
+}

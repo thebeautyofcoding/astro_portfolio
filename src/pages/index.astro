@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro"
+import "../common/main.css"
+import Navbar from "../components/Navbar"
+import About from "../components/sections/About"
+---
+
+<Layout title="Welcome to Astro.">
+  <Navbar client:visible />
+  <About />
+  <main></main>
+</Layout>
