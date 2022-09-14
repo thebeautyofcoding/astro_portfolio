@@ -3,10 +3,23 @@ import Layout from "../layouts/Layout.astro"
 import "../common/main.css"
 import Navbar from "../components/Navbar"
 import About from "../components/sections/About"
+import Header from "../components/sections/Header"
+import Skills from "../components/sections/Skills"
+import Projects from "../components/sections/Projects"
+import ContactMe from "../components/sections/ContactMe"
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Heiner's Portfolio">
   <Navbar client:visible />
-  <About />
-  <main></main>
+  <main class="">
+    <Header client:visible />
+    <About client:visible />
+    <Skills client:visible />
+    <Projects client:visible />
+    <ContactMe client:visible />
+  </main>
 </Layout>
+
+<style>
+
+</style>

@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "react-scroll"
-import navbarItemsJson from "../data/navbarItems.json"
+
 import { GiHamburgerMenu } from "react-icons/gi"
 import { ImCross } from "react-icons/im"
 import { AnimatePresence, motion } from "framer-motion"
+import navbarItems from "./../data/navbarItems"
 export interface NavbarItem {
   title: string
   url: string
@@ -41,33 +42,38 @@ const navbarItem = {
     x: 0,
   },
 }
-const navbarItems = navbarItemsJson.navbarItems as NavbarItem[]
+
 function Navbar() {
   const [activeItem, setActiveItem] = React.useState("Home")
   const [toggle, setToggle] = React.useState(false)
   return (
-    <nav className="fixed bg-[rgba(255,255,255,0.6)] backdrop-blur-sm w-full text-gray-700">
+    <nav className="fixed bg-[rgba(255,255,255,0.6)] backdrop-blur-sm w-full text-gray-700 z-10">
       <div className="flex justify-between">
-        <div className="flex flex-col justify-center ml-4 ">H.G</div>
+        <div className="flex flex-col justify-center ml-4 mr-8 ">H.G</div>
         <ul className="sm:flex hidden justify-evenly w-full">
           {navbarItems.map((item, index) => (
             <li
               className={[
-                "cursor-pointer py-4 duration-300 transition-all",
+                "cursor-pointer duration-300 transition-all w-full text-center",
                 activeItem === item.title
                   ? "text-blue-500 border-blue-500 border-b-2 "
                   : "",
               ].join(" ")}
               key={"navBarItem-" + index}>
               <Link
-                onClick={() => {
-                  setActiveItem(item.title)
-                }}
+                offset={-200}
                 to={item.title.toLowerCase()}
                 smooth={true}
                 duration={500}
                 className="">
-                {item.title}
+                <div
+                  className=" py-4"
+                  onClick={() => {
+                    setActiveItem(item.title)
+                  }}>
+                  {" "}
+                  {item.title}
+                </div>
               </Link>
             </li>
           ))}
@@ -97,7 +103,7 @@ function Navbar() {
               initial="hidden"
               animate="show"
               exit="exit"
-              className="fixed w-full h-screen flex justify-between flex-col  bg-[rgba(255,255,255,0.6)]  backdrop-blur-sm sm:hidden ">
+              className="fixed w-full h-screen flex justify-between flex-col  bg-[rgba(255,255,255,0.8)]  backdrop-blur-sm sm:hidden ">
               {toggle &&
                 navbarItems.map((item, index) => (
                   <motion.li
@@ -105,7 +111,7 @@ function Navbar() {
                       setToggle(false)
                     }}
                     variants={navbarItem}
-                    className="cursor-pointer py-4 duration-300 transition-all flex ml-8 xs:ml-24 justify-start  "
+                    className="cursor-pointer py-4 duration-300 transition-all flex ml-8 xs:ml-24 justify-start "
                     key={"navBarItem-" + index}>
                     <div className="font-semibold">{item.title}</div>
                   </motion.li>

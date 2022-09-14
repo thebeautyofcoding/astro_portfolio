@@ -1,3 +1,5 @@
 {
-  "extends": "astro/tsconfigs/strictest"
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {},
+  "include": ["./src/index.d.ts"]
 }
