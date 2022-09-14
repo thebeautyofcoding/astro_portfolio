@@ -1,7 +1,7 @@
 import React from "react"
-import { AiFillGithub } from "react-icons/ai"
-import { SiUpwork } from "react-icons/si"
-import { AiFillYoutube } from "react-icons/ai"
+import { AiFillGithub } from "react-icons/ai/index"
+import { SiUpwork } from "react-icons/si/index"
+import { AiFillYoutube } from "react-icons/ai/index"
 
 function SocialMedia() {
   return (

@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "react-scroll"
 
-import { GiHamburgerMenu } from "react-icons/gi"
-import { ImCross } from "react-icons/im"
+import { GiHamburgerMenu } from "react-icons/gi/index"
+import { ImCross } from "react-icons/im/index"
 import { AnimatePresence, motion } from "framer-motion"
 import navbarItems from "./../data/navbarItems"
 export interface NavbarItem {

@@ -1,8 +1,8 @@
 import converter from "../images/converter.png"
 import writingislove from "../images/writingislove.png"
 import twitterclone from "../images/twitterclone.png"
-import { AiFillGithub } from "react-icons/ai"
-import { BiLinkExternal } from "react-icons/bi"
+import { AiFillGithub } from "react-icons/ai/index"
+import { BiLinkExternal } from "react-icons/bi/index"
 export const projects = [
   {
     title: "Instagram Downloader Frontend",
