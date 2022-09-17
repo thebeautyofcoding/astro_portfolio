@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai/index"
 import { BiLinkExternal } from "react-icons/bi/index"
 export const projects = [
   {
-    title: "Instagram Downloader Frontend",
+    title: "Video Converter Frontend",
     description:
       "The frontend for an Instagram downloader built with NextJS (TypeScript) and TailwindCSS",
     tag: "Frontend",
@@ -20,7 +20,7 @@ export const projects = [
     },
   },
   {
-    title: "Instagram Downloader Backend",
+    title: "Video Converter Backend",
     description: "The backend for an Instagram downloader built with Flask",
     tag: "Backend",
     image: converter,
