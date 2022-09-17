@@ -57,7 +57,7 @@ function Projects() {
             animate={animateCard}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             key={"project-" + index}
-            className="sm:max-w-[300px] w-[90%]  shadow-lg rounded-lg m-4 overflow-clip">
+            className="sm:max-w-[300px] w-[90%]  shadow-lg rounded-lg m-4 overflow-clip bg-gray-200">
             <div className="relative  sm:w-[300px] sm:h-[300px] w-max-[90%] h-[350px]">
               <img
                 src={project.image.src}
@@ -110,7 +110,7 @@ function Projects() {
                 </div>
               </motion.div>
             </div>
-            <div className="p-2">
+            <div className="p-2 ">
               <div>
                 {" "}
                 <h2 className="font-semibold text-xl my-2">{project.title}</h2>

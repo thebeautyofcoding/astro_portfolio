@@ -70,10 +70,7 @@ function Header() {
           <motion.div variants={item}>
             <div className=" bg-gray-900 opacity-80 p-4 rounded-lg ">
               <h1 className="text-xl sm:text-4xl mb-4">Welcome</h1>
-              <p>
-                I am <span className="text-blue-500">Heiner</span> and I am
-                interested in everything Fullstack.
-              </p>
+              <p>I am Heinerand I am interested in everything Fullstack.</p>
               <p className="text-blue-500">{text}</p>
             </div>
           </motion.div>

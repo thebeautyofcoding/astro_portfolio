@@ -7,9 +7,9 @@ function About() {
     <section
       id="about"
       className=" lg:max-w-[80%] max-w-[75%] flex-col min-h-screen flex justify-center">
-      <h2 className="text-3xl font-semibold text-center ">About Me</h2>
-      <div className="shadow-lg rounded flex p-4 lg:flex-row flex-col">
-        <div className="shadow rounded p-4 flex  basis-1/3 sm:mr-4 mb-4 lg:mb-0 justify-evenly ">
+      <h2 className="text-3xl font-semibold text-center mb-8">About Me</h2>
+      <div className="shadow-lg rounded flex p-4 lg:flex-row flex-col bg-gray-200">
+        <div className="shadow rounded p-4 flex  basis-1/3 sm:mr-4 mb-4 lg:mb-0 justify-evenly bg-gray-100">
           <div className="flex justify-center items-center">
             {" "}
             <img
@@ -23,7 +23,7 @@ function About() {
             ))}
           </ul>
         </div>
-        <div className="shadow flex basis-2/3 py-2 px-4 items-center ">
+        <div className="shadow flex basis-2/3 py-2 px-4 items-center  bg-gray-100">
           Hello, I am Heiner from Germany and I am passionate about everything
           FullStack. I love to work with Laravel, Flask, Django, Express and
           NestJS for the backend, and ReactJS, NextJS and Astro for the frontend

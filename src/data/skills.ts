@@ -4,13 +4,13 @@ import skill3 from "/src/images/skill3.jpg"
 
 export const skills = [
   {
-    title: "Frontend Developer",
+    title: "Frontend",
     description:
       "I am a passionated frontend developer. My favorite technologies are React, NextJS, Astro",
     image: skill1,
   },
   {
-    title: "Backend Developer",
+    title: "Backend",
     description:
       "I am a passionated backend developer. My favorite technologies are NodeJS, Laravel, Flask, NestJS",
     image: skill2,

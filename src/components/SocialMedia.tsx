@@ -5,7 +5,7 @@ import { AiFillYoutube } from "react-icons/ai/index"
 
 function SocialMedia() {
   return (
-    <div className="shadow p-2 rounded flex flex-col">
+    <div className="shadow p-2 rounded flex flex-col bg-gray-200">
       <div className="text-gray-500 hover:text-blue-500 transition duration-300 cursor-pointer">
         <a href="https://github.com/thebeautyofcoding">
           {" "}

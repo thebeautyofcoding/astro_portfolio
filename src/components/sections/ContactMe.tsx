@@ -41,6 +41,9 @@ function ContactMe() {
       <h2 className="text-3xl font-semibold text-center mb-8">
         Good Contacts Mean A Lot of Opportunities
       </h2>
+      <p className="pb-8 text-center text-gray-500">
+        Backend for sending emails has not been deployed...
+      </p>
       <div className="flex flex-col ">
         <div className="mb-4 flex md:flex-row flex-col justify-center">
           <div className="flex my-4 mr-4 justify-center">

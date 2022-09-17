@@ -47,7 +47,7 @@ function Navbar() {
   const [activeItem, setActiveItem] = React.useState("Home")
   const [toggle, setToggle] = React.useState(false)
   return (
-    <nav className="fixed bg-[rgba(255,255,255,0.6)] backdrop-blur-sm w-full text-gray-700 z-10">
+    <nav className="fixed bg-[rgba(255,255,255,0.6)] backdrop-blur-sm w-full text-gray-700 z-50">
       <div className="flex justify-between">
         <div className="flex flex-col justify-center ml-4 mr-8 ">H.G</div>
         <ul className="sm:flex hidden justify-evenly w-full">
