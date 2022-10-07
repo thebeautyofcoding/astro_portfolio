@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi/index"
 import { ImCross } from "react-icons/im/index"
 import { AnimatePresence, motion } from "framer-motion"
 import navbarItems from "./../data/navbarItems"
+import { useScrollPosition } from "../hooks/useScrollPosition"
 export interface NavbarItem {
   title: string
   url: string
@@ -46,10 +47,17 @@ const navbarItem = {
 function Navbar() {
   const [activeItem, setActiveItem] = React.useState("Home")
   const [toggle, setToggle] = React.useState(false)
+  const scrollPosition = useScrollPosition()
   return (
-    <nav className="fixed bg-[rgba(255,255,255,0.6)] backdrop-blur-sm w-full text-gray-700 z-50">
+    <nav
+      className={[
+        "fixed bg-[rgba(255,255,255,0.8)] backdrop-blur-sm w-full text-gray-900 z-50",
+        scrollPosition > 0 ? "shadow-black shadow-sm" : "",
+      ].join(" ")}>
       <div className="flex justify-between">
-        <div className="flex flex-col justify-center ml-4 mr-8 ">H.G</div>
+        <div className="flex items-center justify-center ml-4 mr-8 ">
+          H.<span className="text-blue-500">G</span>
+        </div>
         <ul className="sm:flex hidden justify-evenly w-full">
           {navbarItems.map((item, index) => (
             <li

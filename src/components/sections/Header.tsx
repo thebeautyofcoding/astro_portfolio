@@ -57,10 +57,12 @@ function Header() {
   return (
     <section>
       <div className="relative h-screen w-screen">
-        <img
-          src={header.banner.src}
-          alt={header.h1}
+        <video
+          src={header.video}
           className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
         />
         <motion.div
           variants={parentContainer}
@@ -68,7 +70,7 @@ function Header() {
           animate="show"
           className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white min-w-[80%]  sm:min-w-[40%]">
           <motion.div variants={item}>
-            <div className=" bg-gray-900 opacity-80 p-4 rounded-lg ">
+            <div className=" bg-gray-800 opacity-80 p-4 rounded-lg ">
               <h1 className="text-xl sm:text-4xl mb-4">Welcome</h1>
               <p>I am Heiner and I am interested in everything Fullstack.</p>
               <p className="text-blue-500">{text}</p>

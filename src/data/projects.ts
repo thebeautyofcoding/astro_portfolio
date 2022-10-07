@@ -7,7 +7,7 @@ export const projects = [
   {
     title: "Video Converter Frontend",
     description:
-      "The frontend for an Instagram downloader built with NextJS (TypeScript) and TailwindCSS",
+      "The frontend for the Video Converter built with NextJS (TypeScript) and TailwindCSS",
     tag: "Frontend",
     image: converter,
     githubLink: {
@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     title: "Video Converter Backend",
-    description: "The backend for an Instagram downloader built with Flask",
+    description: "The backend for the video Converter built with Flask",
     tag: "Backend",
     image: converter,
     githubLink: {
